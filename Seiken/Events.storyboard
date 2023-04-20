@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XjR-D0-mAr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChalkboardSE.ttc">
+            <string>ChalkboardSE-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Events-->
+        <scene sceneID="zXb-kI-y7P">
+            <objects>
+                <tableViewController storyboardIdentifier="Eve" title="Events" id="XjR-D0-mAr" customClass="EventsTableViewController" customModule="Seiken" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="65" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lsb-lD-Kjk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellID" textLabel="xP1-v3-84t" imageView="rNP-rF-3bX" style="IBUITableViewCellStyleDefault" id="thT-x6-0ZV">
+                                <rect key="frame" x="0.0" y="28" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="thT-x6-0ZV" id="YUy-FB-RzN">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xP1-v3-84t">
+                                            <rect key="frame" x="58" y="0.0" width="301" height="64.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Logo Type __" id="rNP-rF-3bX">
+                                            <rect key="frame" x="16" y="0.0" width="27" height="64.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XjR-D0-mAr" id="Zsf-ej-paE"/>
+                            <outlet property="delegate" destination="XjR-D0-mAr" id="UVd-Zy-vMA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="5Ls-tz-dAZ"/>
+                    <connections>
+                        <segue destination="PVl-1Q-0XR" kind="show" identifier="to event detail" id="MsR-xb-LB2"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8uE-kY-WNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3486" y="-1843"/>
+        </scene>
+        <!--Event DetailVC-->
+        <scene sceneID="70G-tj-GKX">
+            <objects>
+                <viewController storyboardIdentifier="Grading" id="PVl-1Q-0XR" customClass="EventDetailVC" customModule="Seiken" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zFi-Dn-GPm"/>
+                        <viewControllerLayoutGuide type="bottom" id="hHi-sb-qVb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XLI-TE-QCA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="S5Y-bT-jiQ">
+                                <rect key="frame" x="315" y="20" width="44" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="bMv-6X-1M7"/>
+                                    <constraint firstAttribute="width" constant="44" id="dDF-hV-LQ3"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="VHU-lh-Tsu">
+                                <rect key="frame" x="16" y="20" width="44" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="HOl-tx-zaf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeikenLogo copy" translatesAutoresizingMaskIntoConstraints="NO" id="3Iv-D3-n7n">
+                                <rect key="frame" x="143" y="20" width="88" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="Ano-63-vFw"/>
+                                    <constraint firstAttribute="width" secondItem="3Iv-D3-n7n" secondAttribute="height" multiplier="44:41" id="o9B-Hh-wAK"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Seiken-Martial-Arts" translatesAutoresizingMaskIntoConstraints="NO" id="1lR-hK-of0">
+                                <rect key="frame" x="67" y="110" width="240" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="l66-X1-FEF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seiken upcoming grading test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yo-rc-cpI">
+                                <rect key="frame" x="61" y="169" width="252" height="26"/>
+                                <color key="backgroundColor" red="0.78514868019999995" green="0.1598700881" blue="0.1514880955" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="oUP-bF-lUM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="10" translatesAutoresizingMaskIntoConstraints="NO" id="NFj-3L-lEj">
+                                <rect key="frame" x="0.0" y="203" width="375" height="464"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4o4-CG-Gax">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="464"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4o4-CG-Gax" firstAttribute="top" secondItem="NFj-3L-lEj" secondAttribute="top" id="Vsa-np-Nfd"/>
+                                    <constraint firstItem="4o4-CG-Gax" firstAttribute="leading" secondItem="NFj-3L-lEj" secondAttribute="leading" id="WeJ-M3-Knv"/>
+                                    <constraint firstAttribute="trailing" secondItem="4o4-CG-Gax" secondAttribute="trailing" id="YUG-5a-h0b"/>
+                                    <constraint firstItem="4o4-CG-Gax" firstAttribute="centerX" secondItem="NFj-3L-lEj" secondAttribute="centerX" id="gtA-38-Z4R"/>
+                                    <constraint firstAttribute="bottom" secondItem="4o4-CG-Gax" secondAttribute="bottom" id="vqi-C1-z7G"/>
+                                    <constraint firstItem="4o4-CG-Gax" firstAttribute="centerY" secondItem="NFj-3L-lEj" secondAttribute="centerY" id="yb8-vw-J62"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="PVl-1Q-0XR" id="C3L-Ys-3D8"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VHU-lh-Tsu" firstAttribute="leading" secondItem="XLI-TE-QCA" secondAttribute="leadingMargin" id="0Ju-fI-6KY"/>
+                            <constraint firstItem="VHU-lh-Tsu" firstAttribute="top" secondItem="zFi-Dn-GPm" secondAttribute="bottom" id="1vs-Eh-uIC"/>
+                            <constraint firstItem="NFj-3L-lEj" firstAttribute="top" secondItem="2yo-rc-cpI" secondAttribute="bottom" constant="8" symbolic="YES" id="3A2-TG-dcj"/>
+                            <constraint firstItem="NFj-3L-lEj" firstAttribute="bottom" secondItem="hHi-sb-qVb" secondAttribute="top" id="9BE-cv-mmr"/>
+                            <constraint firstItem="NFj-3L-lEj" firstAttribute="centerX" secondItem="2yo-rc-cpI" secondAttribute="centerX" id="B8Z-2S-lbi"/>
+                            <constraint firstItem="S5Y-bT-jiQ" firstAttribute="leading" secondItem="1lR-hK-of0" secondAttribute="trailing" constant="8" symbolic="YES" id="Lxo-aW-OTP"/>
+                            <constraint firstItem="S5Y-bT-jiQ" firstAttribute="trailing" secondItem="XLI-TE-QCA" secondAttribute="trailingMargin" id="OoP-uE-zQh"/>
+                            <constraint firstItem="VHU-lh-Tsu" firstAttribute="bottom" secondItem="S5Y-bT-jiQ" secondAttribute="bottom" id="RHu-Tc-bSW"/>
+                            <constraint firstItem="1lR-hK-of0" firstAttribute="leading" secondItem="VHU-lh-Tsu" secondAttribute="trailing" constant="7" id="RZP-VG-0N9"/>
+                            <constraint firstItem="VHU-lh-Tsu" firstAttribute="top" secondItem="3Iv-D3-n7n" secondAttribute="top" id="bRg-da-orc"/>
+                            <constraint firstItem="2yo-rc-cpI" firstAttribute="top" secondItem="1lR-hK-of0" secondAttribute="bottom" constant="18" id="f0G-eo-uTT"/>
+                            <constraint firstItem="3Iv-D3-n7n" firstAttribute="centerX" secondItem="XLI-TE-QCA" secondAttribute="centerX" id="nWj-7W-vlb"/>
+                            <constraint firstItem="3Iv-D3-n7n" firstAttribute="top" secondItem="S5Y-bT-jiQ" secondAttribute="top" id="oz9-on-NdY"/>
+                            <constraint firstItem="NFj-3L-lEj" firstAttribute="leading" secondItem="XLI-TE-QCA" secondAttribute="leading" id="pRk-Zy-I0l"/>
+                            <constraint firstItem="1lR-hK-of0" firstAttribute="centerX" secondItem="2yo-rc-cpI" secondAttribute="centerX" id="scv-IP-Wys"/>
+                            <constraint firstItem="1lR-hK-of0" firstAttribute="top" secondItem="3Iv-D3-n7n" secondAttribute="bottom" constant="8" symbolic="YES" id="tCq-g9-zfg"/>
+                            <constraint firstItem="3Iv-D3-n7n" firstAttribute="centerX" secondItem="1lR-hK-of0" secondAttribute="centerX" id="uYz-7B-h7r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="eventImageView" destination="4o4-CG-Gax" id="xtb-nw-CvC"/>
+                        <outlet property="eventLabel" destination="2yo-rc-cpI" id="pkd-SH-4a7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Js-ko-Eyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4468" y="-1844"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo Type __" width="318" height="749"/>
+        <image name="Seiken-Martial-Arts" width="553" height="91"/>
+        <image name="SeikenLogo copy" width="375" height="375"/>
+    </resources>
+    <color key="tintColor" red="0.94117647059999998" green="0.36862745099999999" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_SeikenUITests {
+  umbrella header "Pods-SeikenUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

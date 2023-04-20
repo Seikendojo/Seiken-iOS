@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="udg-Hy-1pt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact UsVC-->
+        <scene sceneID="X3U-Lz-Ps6">
+            <objects>
+                <viewController id="udg-Hy-1pt" customClass="ContactUsVC" customModule="Seiken" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lu0-9l-MW3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cjb-hq-XQS" userLabel="Top view">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="jqM-ZI-7iS">
+                                        <rect key="frame" x="23" y="4" width="329" height="192"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="lJf-1n-nmC">
+                                                <rect key="frame" x="1" y="0.0" width="327" height="120"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="Cpx-rK-Wca">
+                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="120"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Cpx-rK-Wca" secondAttribute="height" multiplier="44:105" id="Ryg-3D-Znx"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeikenLogo copy" translatesAutoresizingMaskIntoConstraints="NO" id="6qz-Uh-GlZ">
+                                                        <rect key="frame" x="111" y="10.5" width="106" height="99"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="6qz-Uh-GlZ" secondAttribute="height" multiplier="44:41" id="4Wp-31-tXy"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="uIQ-dQ-IVR">
+                                                        <rect key="frame" x="277" y="0.0" width="50" height="120"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="uIQ-dQ-IVR" secondAttribute="height" multiplier="44:105" id="edO-sq-31z"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="uIQ-dQ-IVR" firstAttribute="height" secondItem="Cpx-rK-Wca" secondAttribute="height" id="SLE-fx-6Ts"/>
+                                                    <constraint firstItem="6qz-Uh-GlZ" firstAttribute="height" secondItem="Cpx-rK-Wca" secondAttribute="height" multiplier="0.83" id="fqZ-aB-fYT"/>
+                                                </constraints>
+                                            </stackView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Seiken-Martial-Arts" translatesAutoresizingMaskIntoConstraints="NO" id="PEw-lo-ISo">
+                                                <rect key="frame" x="0.0" y="132" width="329" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="PEw-lo-ISo" secondAttribute="height" multiplier="115:21" id="bqo-dP-3Ve"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="jqM-ZI-7iS" firstAttribute="centerX" secondItem="Cjb-hq-XQS" secondAttribute="centerX" id="A8Z-B2-dca"/>
+                                    <constraint firstItem="Cpx-rK-Wca" firstAttribute="height" secondItem="Cjb-hq-XQS" secondAttribute="height" multiplier="0.6" id="VFY-nn-98M"/>
+                                    <constraint firstItem="jqM-ZI-7iS" firstAttribute="centerY" secondItem="Cjb-hq-XQS" secondAttribute="centerY" id="kZd-mG-VIG"/>
+                                    <constraint firstItem="PEw-lo-ISo" firstAttribute="height" secondItem="Cjb-hq-XQS" secondAttribute="height" multiplier="0.3" id="qIN-Qs-95f"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="15R-s7-W2F">
+                                <rect key="frame" x="0.0" y="200" width="375" height="85"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="bfL-CB-1bS"/>
+                                    <constraint firstAttribute="height" constant="85" id="kCD-rc-o7J"/>
+                                </constraints>
+                                <string key="text">Address: 109-15122 72nd Ave                                                Surrey, BC V3S 2G2                                                          Phone: 778-578-1800                                                    Web: www.seiken.ca</string>
+                                <color key="textColor" red="1" green="0.0016353240705119232" blue="0.76364920246529489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                            </textView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sGU-AJ-BLQ">
+                                <rect key="frame" x="0.0" y="285" width="375" height="382"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="15R-s7-W2F" firstAttribute="centerX" secondItem="lu0-9l-MW3" secondAttribute="centerX" id="0va-vD-BwH"/>
+                            <constraint firstItem="Cjb-hq-XQS" firstAttribute="top" secondItem="lu0-9l-MW3" secondAttribute="top" id="EIL-Bc-JWf"/>
+                            <constraint firstItem="Cjb-hq-XQS" firstAttribute="height" secondItem="lu0-9l-MW3" secondAttribute="height" multiplier="0.3" id="Gu1-ca-3UJ"/>
+                            <constraint firstItem="sGU-AJ-BLQ" firstAttribute="bottom" secondItem="DVk-Aw-mlQ" secondAttribute="bottom" id="Pja-ql-N5a"/>
+                            <constraint firstItem="Cjb-hq-XQS" firstAttribute="trailing" secondItem="DVk-Aw-mlQ" secondAttribute="trailing" id="RP3-LW-onD"/>
+                            <constraint firstItem="sGU-AJ-BLQ" firstAttribute="top" secondItem="15R-s7-W2F" secondAttribute="bottom" id="UFX-f8-oyn"/>
+                            <constraint firstItem="sGU-AJ-BLQ" firstAttribute="trailing" secondItem="DVk-Aw-mlQ" secondAttribute="trailing" id="cDL-c8-K7D"/>
+                            <constraint firstItem="sGU-AJ-BLQ" firstAttribute="leading" secondItem="DVk-Aw-mlQ" secondAttribute="leading" id="rlD-k0-0qn"/>
+                            <constraint firstItem="15R-s7-W2F" firstAttribute="top" secondItem="Cjb-hq-XQS" secondAttribute="bottom" id="sFJ-A2-2JY"/>
+                            <constraint firstItem="Cjb-hq-XQS" firstAttribute="leading" secondItem="DVk-Aw-mlQ" secondAttribute="leading" id="xmy-vk-Jr1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DVk-Aw-mlQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="sGU-AJ-BLQ" id="MWM-ja-hn0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JAr-Xq-Vv3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45.600000000000001" y="-180.35982008995504"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo Type __" width="318" height="749"/>
+        <image name="Seiken-Martial-Arts" width="553" height="91"/>
+        <image name="SeikenLogo copy" width="375" height="375"/>
+    </resources>
+</document>

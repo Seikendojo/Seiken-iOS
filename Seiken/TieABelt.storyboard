@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fbW-hW-cnD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChalkboardSE.ttc">
+            <string>ChalkboardSE-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--How To Tie Our BeltVC-->
+        <scene sceneID="Eau-cF-8Zs">
+            <objects>
+                <viewController id="fbW-hW-cnD" customClass="HowToTieOurBeltVC" customModule="Seiken" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="643-QP-bLb"/>
+                        <viewControllerLayoutGuide type="bottom" id="SnV-JL-KwK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Ff-Ff-zpB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="1wE-QN-385">
+                                <rect key="frame" x="318" y="20" width="40" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Cef-G6-xYp"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="y9j-uO-iDQ">
+                                <rect key="frame" x="15" y="20" width="41" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="G3b-sY-jxC"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeikenLogo copy" translatesAutoresizingMaskIntoConstraints="NO" id="i60-6g-kRj">
+                                <rect key="frame" x="112" y="20" width="152" height="84"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Seiken-Martial-Arts" translatesAutoresizingMaskIntoConstraints="NO" id="ueB-B1-SsX">
+                                <rect key="frame" x="78" y="120" width="219" height="29"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beach" translatesAutoresizingMaskIntoConstraints="NO" id="OEJ-uX-99d">
+                                <rect key="frame" x="1" y="151" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Hnw-2o-8iq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to tie belt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXo-K9-VK6">
+                                <rect key="frame" x="17" y="199" width="343" height="41"/>
+                                <color key="backgroundColor" red="0.78514868019999995" green="0.1598700881" blue="0.1514880955" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="mna-iE-TWx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A75-yH-CKY">
+                                <rect key="frame" x="16" y="297" width="343" height="317"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i60-6g-kRj" firstAttribute="bottom" secondItem="1wE-QN-385" secondAttribute="bottom" id="0Ze-hX-Bxa"/>
+                            <constraint firstItem="y9j-uO-iDQ" firstAttribute="top" secondItem="643-QP-bLb" secondAttribute="bottom" id="0vA-NM-qc9"/>
+                            <constraint firstItem="i60-6g-kRj" firstAttribute="centerX" secondItem="ueB-B1-SsX" secondAttribute="centerX" id="6WJ-UD-GPv"/>
+                            <constraint firstItem="ueB-B1-SsX" firstAttribute="leading" secondItem="3Ff-Ff-zpB" secondAttribute="leadingMargin" constant="62" id="8PU-Nx-Fvw"/>
+                            <constraint firstItem="JXo-K9-VK6" firstAttribute="top" secondItem="OEJ-uX-99d" secondAttribute="bottom" constant="14" id="AYA-Ea-MQH"/>
+                            <constraint firstItem="A75-yH-CKY" firstAttribute="leading" secondItem="3Ff-Ff-zpB" secondAttribute="leadingMargin" id="D9f-bZ-Avu"/>
+                            <constraint firstItem="OEJ-uX-99d" firstAttribute="centerX" secondItem="A75-yH-CKY" secondAttribute="centerX" id="E4h-To-x4b"/>
+                            <constraint firstItem="OEJ-uX-99d" firstAttribute="centerX" secondItem="JXo-K9-VK6" secondAttribute="centerX" id="F9I-oL-xLn"/>
+                            <constraint firstItem="OEJ-uX-99d" firstAttribute="top" secondItem="y9j-uO-iDQ" secondAttribute="bottom" constant="47" id="GUv-Sm-7d5"/>
+                            <constraint firstItem="A75-yH-CKY" firstAttribute="trailing" secondItem="3Ff-Ff-zpB" secondAttribute="trailingMargin" id="IiC-BP-b8J"/>
+                            <constraint firstItem="i60-6g-kRj" firstAttribute="leading" secondItem="y9j-uO-iDQ" secondAttribute="trailing" constant="56" id="M8k-eS-obP"/>
+                            <constraint firstItem="OEJ-uX-99d" firstAttribute="top" secondItem="ueB-B1-SsX" secondAttribute="bottom" constant="2" id="NIL-ez-0di"/>
+                            <constraint firstItem="1wE-QN-385" firstAttribute="leading" secondItem="i60-6g-kRj" secondAttribute="trailing" constant="54" id="NPd-rW-KHg"/>
+                            <constraint firstItem="A75-yH-CKY" firstAttribute="top" secondItem="JXo-K9-VK6" secondAttribute="bottom" constant="57" id="Ne2-9A-RDS"/>
+                            <constraint firstItem="JXo-K9-VK6" firstAttribute="leading" secondItem="3Ff-Ff-zpB" secondAttribute="leadingMargin" constant="1" id="UVm-HH-zNG"/>
+                            <constraint firstItem="SnV-JL-KwK" firstAttribute="top" secondItem="A75-yH-CKY" secondAttribute="bottom" constant="53" id="X7S-Y4-tYw"/>
+                            <constraint firstItem="ueB-B1-SsX" firstAttribute="centerX" secondItem="OEJ-uX-99d" secondAttribute="centerX" id="Yc3-Ke-iOD"/>
+                            <constraint firstItem="ueB-B1-SsX" firstAttribute="top" secondItem="i60-6g-kRj" secondAttribute="bottom" constant="16" id="et6-E9-iz5"/>
+                            <constraint firstItem="y9j-uO-iDQ" firstAttribute="leading" secondItem="3Ff-Ff-zpB" secondAttribute="leadingMargin" constant="-1" id="gZC-C2-x15"/>
+                            <constraint firstItem="y9j-uO-iDQ" firstAttribute="bottom" secondItem="i60-6g-kRj" secondAttribute="bottom" id="kyw-91-Oza"/>
+                            <constraint firstAttribute="trailing" secondItem="OEJ-uX-99d" secondAttribute="trailing" id="oCD-kk-jYN"/>
+                            <constraint firstItem="i60-6g-kRj" firstAttribute="top" secondItem="1wE-QN-385" secondAttribute="top" id="pd9-W0-wCg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1wE-QN-385" secondAttribute="trailing" constant="1" id="qEs-gx-rPs"/>
+                            <constraint firstItem="y9j-uO-iDQ" firstAttribute="top" secondItem="i60-6g-kRj" secondAttribute="top" id="v1d-fs-qIo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tieBeltLabel" destination="JXo-K9-VK6" id="meo-6Q-R4r"/>
+                        <outlet property="tieBeltWebView" destination="A75-yH-CKY" id="R6h-H5-8ku"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p8p-Q8-48u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2502" y="-1013"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Beach" width="4721" height="690"/>
+        <image name="Logo Type __" width="318" height="749"/>
+        <image name="Seiken-Martial-Arts" width="553" height="91"/>
+        <image name="SeikenLogo copy" width="375" height="375"/>
+    </resources>
+    <color key="tintColor" red="0.94117647059999998" green="0.36862745099999999" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

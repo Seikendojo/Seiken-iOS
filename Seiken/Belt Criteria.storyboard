@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y7g-68-BQ8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChalkboardSE.ttc">
+            <string>ChalkboardSE-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Belt Criteria-->
+        <scene sceneID="jZ6-5t-z4K">
+            <objects>
+                <tableViewController storyboardIdentifier="BC" title="Belt Criteria" id="Y7g-68-BQ8" customClass="BeltCriteriaTableViewController" customModule="Seiken" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="65" sectionHeaderHeight="28" sectionFooterHeight="28" id="3Sb-SC-7R5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="beltCell" textLabel="rId-w3-VBX" imageView="h5i-0m-IcC" style="IBUITableViewCellStyleDefault" id="zvg-KV-0sP" customClass="BeltTableViewCell" customModule="Seiken" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zvg-KV-0sP" id="MJa-tO-KdK">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="64.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rId-w3-VBX">
+                                            <rect key="frame" x="58" y="0.0" width="282" height="64.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Logo Type __" id="h5i-0m-IcC">
+                                            <rect key="frame" x="16" y="0.0" width="27" height="64.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="beltTitleLabel" destination="rId-w3-VBX" id="hJ4-0H-Z4k"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Y7g-68-BQ8" id="yH1-9P-E9l"/>
+                            <outlet property="delegate" destination="Y7g-68-BQ8" id="xh5-dd-geg"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Jk3-MJ-9av"/>
+                    <connections>
+                        <segue destination="EV6-0h-9ci" kind="show" identifier="toBeltDetail" id="T7T-Pb-z4Z">
+                            <nil key="action"/>
+                        </segue>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hrC-8X-MYV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2661" y="-2396"/>
+        </scene>
+        <!--Belt Techniques View Controller-->
+        <scene sceneID="RKJ-6J-Zap">
+            <objects>
+                <viewController id="EV6-0h-9ci" customClass="BeltTechniquesViewController" customModule="Seiken" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4eT-ui-Zv8"/>
+                        <viewControllerLayoutGuide type="bottom" id="8If-sd-YNM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Bo-d1-wYA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xQV-oQ-O50">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="jlG-E2-6mz">
+                                        <rect key="frame" x="287" y="8" width="44" height="105"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="jlG-E2-6mz" secondAttribute="height" multiplier="44:105" id="DIe-Oo-7a2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="xgz-Bc-CqR">
+                                        <rect key="frame" x="43" y="8" width="44" height="105"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="xgz-Bc-CqR" secondAttribute="height" multiplier="44:105" id="ikK-Q9-etk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aUg-Of-F4O">
+                                        <rect key="frame" x="95" y="8" width="184" height="140"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeikenLogo copy" translatesAutoresizingMaskIntoConstraints="NO" id="FAz-wd-Zz4">
+                                                <rect key="frame" x="48" y="0.0" width="88" height="82"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="FAz-wd-Zz4" secondAttribute="height" multiplier="88:82" id="BBt-zw-eED"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wBq-wW-8Kc">
+                                                <rect key="frame" x="0.0" y="90" width="184" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="184" id="0Df-pQ-Ldv"/>
+                                                    <constraint firstAttribute="height" constant="50" id="yAx-fm-ZoM"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xgz-Bc-CqR" firstAttribute="top" secondItem="aUg-Of-F4O" secondAttribute="top" id="00U-MY-Mes"/>
+                                    <constraint firstItem="FAz-wd-Zz4" firstAttribute="height" secondItem="xQV-oQ-O50" secondAttribute="height" multiplier="0.526" id="3td-CB-oTQ"/>
+                                    <constraint firstItem="jlG-E2-6mz" firstAttribute="top" secondItem="xgz-Bc-CqR" secondAttribute="top" id="6cm-dQ-Wz7"/>
+                                    <constraint firstItem="xgz-Bc-CqR" firstAttribute="height" secondItem="jlG-E2-6mz" secondAttribute="height" id="BzO-yt-Jub"/>
+                                    <constraint firstItem="jlG-E2-6mz" firstAttribute="top" secondItem="aUg-Of-F4O" secondAttribute="top" id="UNk-0B-C52"/>
+                                    <constraint firstItem="aUg-Of-F4O" firstAttribute="centerY" secondItem="xQV-oQ-O50" secondAttribute="centerY" id="YZ4-W0-h32"/>
+                                    <constraint firstItem="jlG-E2-6mz" firstAttribute="height" secondItem="xQV-oQ-O50" secondAttribute="height" multiplier="0.673" id="Ziq-uv-gZq"/>
+                                    <constraint firstItem="xgz-Bc-CqR" firstAttribute="bottom" secondItem="jlG-E2-6mz" secondAttribute="bottom" id="ayO-Nc-l70"/>
+                                    <constraint firstItem="aUg-Of-F4O" firstAttribute="leading" secondItem="xgz-Bc-CqR" secondAttribute="trailing" constant="8" id="btV-wo-32U"/>
+                                    <constraint firstItem="jlG-E2-6mz" firstAttribute="leading" secondItem="aUg-Of-F4O" secondAttribute="trailing" constant="8" id="eq9-bU-otp"/>
+                                    <constraint firstItem="aUg-Of-F4O" firstAttribute="centerX" secondItem="xQV-oQ-O50" secondAttribute="centerX" id="pGp-6Z-Lfl"/>
+                                    <constraint firstItem="xgz-Bc-CqR" firstAttribute="centerY" secondItem="jlG-E2-6mz" secondAttribute="centerY" id="zuc-VV-JdZ"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="10" translatesAutoresizingMaskIntoConstraints="NO" id="a0d-Rk-rXg">
+                                <rect key="frame" x="0.0" y="156" width="375" height="511"/>
+                                <subviews>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="geF-nm-dhQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="511"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="geF-nm-dhQ" secondAttribute="bottom" id="2Bu-OI-ydp"/>
+                                    <constraint firstItem="geF-nm-dhQ" firstAttribute="centerY" secondItem="a0d-Rk-rXg" secondAttribute="centerY" id="Azt-6N-o24"/>
+                                    <constraint firstItem="geF-nm-dhQ" firstAttribute="leading" secondItem="a0d-Rk-rXg" secondAttribute="leading" id="BZa-6s-2Wc"/>
+                                    <constraint firstItem="geF-nm-dhQ" firstAttribute="centerX" secondItem="a0d-Rk-rXg" secondAttribute="centerX" id="TZC-Im-fJp"/>
+                                    <constraint firstAttribute="trailing" secondItem="geF-nm-dhQ" secondAttribute="trailing" id="ZDV-iA-Ort"/>
+                                    <constraint firstItem="geF-nm-dhQ" firstAttribute="top" secondItem="a0d-Rk-rXg" secondAttribute="top" id="i7j-ll-MdH"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="EV6-0h-9ci" id="FvC-sK-8Ir"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a0d-Rk-rXg" firstAttribute="trailing" secondItem="xQV-oQ-O50" secondAttribute="trailing" id="BFn-0n-goe"/>
+                            <constraint firstItem="xQV-oQ-O50" firstAttribute="leading" secondItem="wHj-9q-QKg" secondAttribute="leading" id="G6Z-cH-HPy"/>
+                            <constraint firstItem="a0d-Rk-rXg" firstAttribute="bottom" secondItem="8If-sd-YNM" secondAttribute="top" id="G9r-yo-Rk1"/>
+                            <constraint firstItem="xQV-oQ-O50" firstAttribute="top" secondItem="1Bo-d1-wYA" secondAttribute="top" id="HVe-1V-Sd4"/>
+                            <constraint firstItem="a0d-Rk-rXg" firstAttribute="leading" secondItem="xQV-oQ-O50" secondAttribute="leading" id="NWZ-nR-7HR"/>
+                            <constraint firstItem="a0d-Rk-rXg" firstAttribute="top" secondItem="xQV-oQ-O50" secondAttribute="bottom" id="dzX-t4-A62"/>
+                            <constraint firstItem="xQV-oQ-O50" firstAttribute="height" secondItem="1Bo-d1-wYA" secondAttribute="height" multiplier="0.234" id="quM-g8-sGz"/>
+                            <constraint firstItem="xQV-oQ-O50" firstAttribute="top" secondItem="1Bo-d1-wYA" secondAttribute="top" id="veN-yI-k6z"/>
+                            <constraint firstItem="xQV-oQ-O50" firstAttribute="trailing" secondItem="wHj-9q-QKg" secondAttribute="trailing" id="yjq-yf-JjK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wHj-9q-QKg"/>
+                    </view>
+                    <connections>
+                        <outlet property="beltImageView" destination="geF-nm-dhQ" id="nTJ-Wh-zOV"/>
+                        <outlet property="titleBeltImageView" destination="wBq-wW-8Kc" id="T6P-RF-b4Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FDR-8B-IFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3596" y="-2397.7511244377811"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo Type __" width="318" height="749"/>
+        <image name="SeikenLogo copy" width="375" height="375"/>
+    </resources>
+</document>

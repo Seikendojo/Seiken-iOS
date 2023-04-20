@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rvb-ld-fMq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChalkboardSE.ttc">
+            <string>ChalkboardSE-Bold</string>
+            <string>ChalkboardSE-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--ProgramsVC-->
+        <scene sceneID="BMi-tx-LQi">
+            <objects>
+                <viewController storyboardIdentifier="Programs" id="Rvb-ld-fMq" customClass="ProgramsVC" customModule="Seiken" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rLn-Vk-FjV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="4IU-G5-4On">
+                                <rect key="frame" x="16" y="20" width="41" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="jRZ-7O-gF5"/>
+                                    <constraint firstAttribute="width" constant="41" id="uqM-sZ-hV8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="U8a-mr-ss8">
+                                <rect key="frame" x="318" y="20" width="41" height="85"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeikenLogo copy" translatesAutoresizingMaskIntoConstraints="NO" id="6qH-J4-gti">
+                                <rect key="frame" x="112" y="28" width="151" height="85"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Seiken-Martial-Arts" translatesAutoresizingMaskIntoConstraints="NO" id="9lq-Ve-ylh">
+                                <rect key="frame" x="80" y="121" width="216" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="86y-jn-IX8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beach" translatesAutoresizingMaskIntoConstraints="NO" id="2qC-MP-zRc">
+                                <rect key="frame" x="0.0" y="152" width="375" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="5cj-re-lCg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7Q-AT-ij0">
+                                <rect key="frame" x="16" y="200" width="343" height="41"/>
+                                <color key="backgroundColor" red="0.78514868019999995" green="0.1598700881" blue="0.1514880955" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <state key="normal" title="Shinkyokushin Karate">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ShinkyokushinBtnTapped:" destination="Rvb-ld-fMq" eventType="touchUpInside" id="q5o-Qa-9VA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRd-1z-mtu">
+                                <rect key="frame" x="16" y="249" width="343" height="41"/>
+                                <color key="backgroundColor" red="0.78514868019999995" green="0.1598700881" blue="0.1514880955" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <state key="normal" title="Mini Karate">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="MiniKarateBtnTapped:" destination="Rvb-ld-fMq" eventType="touchUpInside" id="y2z-Kq-1w2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNv-UB-fAE">
+                                <rect key="frame" x="16" y="298" width="343" height="41"/>
+                                <color key="backgroundColor" red="0.78514868019999995" green="0.1598700881" blue="0.1514880955" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <state key="normal" title="Kickboxing">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="KickboxingBtnTapped:" destination="Rvb-ld-fMq" eventType="touchUpInside" id="i0T-rD-ubZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9lq-Ve-ylh" firstAttribute="leading" secondItem="H6f-hb-QV3" secondAttribute="leading" constant="80" id="096-vx-dF3"/>
+                            <constraint firstItem="4IU-G5-4On" firstAttribute="bottom" secondItem="U8a-mr-ss8" secondAttribute="bottom" id="4vZ-PR-rTO"/>
+                            <constraint firstItem="k7Q-AT-ij0" firstAttribute="top" secondItem="2qC-MP-zRc" secondAttribute="bottom" constant="14" id="59c-Rw-yvq"/>
+                            <constraint firstItem="4IU-G5-4On" firstAttribute="leading" secondItem="rLn-Vk-FjV" secondAttribute="leadingMargin" id="ALt-hi-m40"/>
+                            <constraint firstItem="vRd-1z-mtu" firstAttribute="top" secondItem="k7Q-AT-ij0" secondAttribute="bottom" constant="8" symbolic="YES" id="Gkc-vA-K6T"/>
+                            <constraint firstItem="6qH-J4-gti" firstAttribute="centerX" secondItem="9lq-Ve-ylh" secondAttribute="centerX" id="MKC-Yo-6Bo"/>
+                            <constraint firstItem="9lq-Ve-ylh" firstAttribute="centerX" secondItem="2qC-MP-zRc" secondAttribute="centerX" id="Rbs-pK-r8P"/>
+                            <constraint firstItem="4IU-G5-4On" firstAttribute="top" secondItem="U8a-mr-ss8" secondAttribute="top" id="VcR-Ni-dg7"/>
+                            <constraint firstItem="2qC-MP-zRc" firstAttribute="top" secondItem="9lq-Ve-ylh" secondAttribute="bottom" constant="2" id="a21-k1-RUK"/>
+                            <constraint firstItem="vRd-1z-mtu" firstAttribute="leading" secondItem="k7Q-AT-ij0" secondAttribute="leading" id="abh-5K-BAS"/>
+                            <constraint firstItem="vRd-1z-mtu" firstAttribute="trailing" secondItem="k7Q-AT-ij0" secondAttribute="trailing" id="bL2-MK-h5d"/>
+                            <constraint firstItem="6qH-J4-gti" firstAttribute="leading" secondItem="4IU-G5-4On" secondAttribute="trailing" constant="55" id="cB7-qu-pbe"/>
+                            <constraint firstItem="vRd-1z-mtu" firstAttribute="leading" secondItem="TNv-UB-fAE" secondAttribute="leading" id="dl3-ng-Ljl"/>
+                            <constraint firstItem="U8a-mr-ss8" firstAttribute="leading" secondItem="6qH-J4-gti" secondAttribute="trailing" constant="55" id="eRD-BZ-AXX"/>
+                            <constraint firstItem="2qC-MP-zRc" firstAttribute="centerX" secondItem="k7Q-AT-ij0" secondAttribute="centerX" id="igM-xp-AIQ"/>
+                            <constraint firstItem="U8a-mr-ss8" firstAttribute="trailing" secondItem="k7Q-AT-ij0" secondAttribute="trailing" id="kix-90-YOh"/>
+                            <constraint firstItem="2qC-MP-zRc" firstAttribute="leading" secondItem="rLn-Vk-FjV" secondAttribute="leading" id="kud-ry-WV2"/>
+                            <constraint firstItem="2qC-MP-zRc" firstAttribute="top" secondItem="4IU-G5-4On" secondAttribute="bottom" constant="47" id="lDQ-i1-7Ap"/>
+                            <constraint firstItem="9lq-Ve-ylh" firstAttribute="top" secondItem="6qH-J4-gti" secondAttribute="bottom" constant="8" symbolic="YES" id="n9e-7a-Nmo"/>
+                            <constraint firstAttribute="trailing" secondItem="2qC-MP-zRc" secondAttribute="trailing" id="rzY-2r-YX4"/>
+                            <constraint firstItem="4IU-G5-4On" firstAttribute="leading" secondItem="k7Q-AT-ij0" secondAttribute="leading" id="u0G-Ts-0Fn"/>
+                            <constraint firstItem="vRd-1z-mtu" firstAttribute="trailing" secondItem="TNv-UB-fAE" secondAttribute="trailing" id="uPF-9e-eoM"/>
+                            <constraint firstItem="4IU-G5-4On" firstAttribute="top" secondItem="H6f-hb-QV3" secondAttribute="top" id="wCg-YL-Rtq"/>
+                            <constraint firstItem="6qH-J4-gti" firstAttribute="top" secondItem="H6f-hb-QV3" secondAttribute="top" constant="8" id="x1e-Or-LhI"/>
+                            <constraint firstItem="TNv-UB-fAE" firstAttribute="top" secondItem="vRd-1z-mtu" secondAttribute="bottom" constant="8" symbolic="YES" id="ypy-mG-VqO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H6f-hb-QV3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jOt-6N-vQQ"/>
+                    <connections>
+                        <segue destination="P4g-wc-iF2" kind="show" identifier="Shinkyokushin" id="Dc5-bf-4uE">
+                            <nil key="action"/>
+                        </segue>
+                        <segue destination="Wz4-ah-ChN" kind="show" identifier="MiniKarate" id="kX9-nD-3xV">
+                            <nil key="action"/>
+                        </segue>
+                        <segue destination="vDv-Dv-NNs" kind="show" identifier="Kickboxing" id="hdv-cc-iCV">
+                            <nil key="action"/>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q5h-G0-pfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1239.2" y="-1084.4077961019491"/>
+        </scene>
+        <!--Shin Kyokushin View Controller-->
+        <scene sceneID="YXu-6h-9nC">
+            <objects>
+                <viewController id="P4g-wc-iF2" customClass="ShinKyokushinViewController" customModule="Seiken" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Hr-g6-icr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="djt-E0-uBG">
+                                <rect key="frame" x="315" y="20" width="44" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="e5j-tY-mgQ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="xRz-Fi-960">
+                                <rect key="frame" x="16" y="20" width="44" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="trl-ii-EOh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeikenLogo copy" translatesAutoresizingMaskIntoConstraints="NO" id="8gN-Y3-IIV">
+                                <rect key="frame" x="144" y="20" width="88" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8gN-Y3-IIV" secondAttribute="height" multiplier="44:41" id="i7g-NQ-zze"/>
+                                    <constraint firstAttribute="height" constant="82" id="nYV-WH-ZOv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Seiken-Martial-Arts" translatesAutoresizingMaskIntoConstraints="NO" id="v2g-HM-gja">
+                                <rect key="frame" x="68" y="110" width="239" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="rHZ-su-Tjg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shinkyokushin Karate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B03-5d-MOn">
+                                <rect key="frame" x="16" y="159" width="343" height="25"/>
+                                <color key="backgroundColor" red="0.78514868019999995" green="0.1598700881" blue="0.1514880955" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Suk-n9-sS6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shinkyo2" translatesAutoresizingMaskIntoConstraints="NO" id="86u-cb-PkJ">
+                                <rect key="frame" x="0.0" y="203" width="375" height="224"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XGM-lg-HhY">
+                                <rect key="frame" x="0.0" y="435" width="375" height="181"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="181" id="iyy-qg-d5S"/>
+                                </constraints>
+                                <string key="text">Shinkyokushin Karate traces its original roots KyokUshin Karate and its founder Sosai Mas Oyama to our current Kaicho Kenji Shihan (The 5th world open kyokushin karate tournament champion.                                                                         Confidence, Respect and Discipline, Fitness and Strength,Camaraderie are some benefits of this program.                                              </string>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ap-2p-v5U">
+                                <rect key="frame" x="1" y="622" width="375" height="45"/>
+                                <color key="backgroundColor" red="0.78514868021011353" green="0.15987008810043335" blue="0.15148809552192688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                <state key="normal" title="Contact us to book for two free trial classes">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="contactUsTapped:" destination="P4g-wc-iF2" eventType="touchUpInside" id="tAF-VX-dOf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3ap-2p-v5U" firstAttribute="leading" secondItem="ePg-aQ-Ach" secondAttribute="leading" constant="1" id="1Jx-yt-QGF"/>
+                            <constraint firstItem="v2g-HM-gja" firstAttribute="top" secondItem="8gN-Y3-IIV" secondAttribute="bottom" constant="8" symbolic="YES" id="2dj-gB-70U"/>
+                            <constraint firstItem="xRz-Fi-960" firstAttribute="top" secondItem="ePg-aQ-Ach" secondAttribute="top" id="4SR-gN-8Df"/>
+                            <constraint firstItem="8gN-Y3-IIV" firstAttribute="top" secondItem="djt-E0-uBG" secondAttribute="top" id="7xe-Wj-phg"/>
+                            <constraint firstItem="v2g-HM-gja" firstAttribute="leading" secondItem="xRz-Fi-960" secondAttribute="trailing" constant="8" symbolic="YES" id="9ad-6n-D8C"/>
+                            <constraint firstItem="B03-5d-MOn" firstAttribute="top" secondItem="v2g-HM-gja" secondAttribute="bottom" constant="8" symbolic="YES" id="Dgd-wf-KiN"/>
+                            <constraint firstItem="86u-cb-PkJ" firstAttribute="leading" secondItem="0Hr-g6-icr" secondAttribute="leading" id="Icu-HW-njG"/>
+                            <constraint firstItem="8gN-Y3-IIV" firstAttribute="centerX" secondItem="v2g-HM-gja" secondAttribute="centerX" id="P3n-TF-Wpj"/>
+                            <constraint firstItem="B03-5d-MOn" firstAttribute="centerX" secondItem="86u-cb-PkJ" secondAttribute="centerX" id="RjI-dr-RTD"/>
+                            <constraint firstItem="3ap-2p-v5U" firstAttribute="top" secondItem="XGM-lg-HhY" secondAttribute="bottom" constant="6" id="T6I-SX-Vr0"/>
+                            <constraint firstItem="86u-cb-PkJ" firstAttribute="top" secondItem="B03-5d-MOn" secondAttribute="bottom" constant="19" id="ZU0-tC-FVv"/>
+                            <constraint firstItem="v2g-HM-gja" firstAttribute="centerX" secondItem="B03-5d-MOn" secondAttribute="centerX" id="Zat-0T-nbs"/>
+                            <constraint firstItem="djt-E0-uBG" firstAttribute="trailing" secondItem="B03-5d-MOn" secondAttribute="trailing" id="Zkg-Pr-iPW"/>
+                            <constraint firstItem="XGM-lg-HhY" firstAttribute="top" secondItem="86u-cb-PkJ" secondAttribute="bottom" constant="8" symbolic="YES" id="aKf-Om-wqx"/>
+                            <constraint firstItem="3ap-2p-v5U" firstAttribute="centerX" secondItem="8gN-Y3-IIV" secondAttribute="centerX" id="e3n-Oa-v66"/>
+                            <constraint firstItem="8gN-Y3-IIV" firstAttribute="centerX" secondItem="ePg-aQ-Ach" secondAttribute="centerX" id="fzu-UP-eJ8"/>
+                            <constraint firstItem="B03-5d-MOn" firstAttribute="top" secondItem="xRz-Fi-960" secondAttribute="bottom" constant="34" id="jqg-3a-u9L"/>
+                            <constraint firstItem="xRz-Fi-960" firstAttribute="leading" secondItem="B03-5d-MOn" secondAttribute="leading" id="m6b-SY-aCW"/>
+                            <constraint firstItem="xRz-Fi-960" firstAttribute="bottom" secondItem="djt-E0-uBG" secondAttribute="bottom" id="mPR-R1-zuV"/>
+                            <constraint firstItem="xRz-Fi-960" firstAttribute="top" secondItem="8gN-Y3-IIV" secondAttribute="top" id="oTr-ko-gJP"/>
+                            <constraint firstItem="ePg-aQ-Ach" firstAttribute="bottom" secondItem="XGM-lg-HhY" secondAttribute="bottom" constant="51" id="pct-fs-eKE"/>
+                            <constraint firstAttribute="trailing" secondItem="86u-cb-PkJ" secondAttribute="trailing" id="tCk-oF-uah"/>
+                            <constraint firstItem="86u-cb-PkJ" firstAttribute="leading" secondItem="XGM-lg-HhY" secondAttribute="leading" id="vCD-K3-9em"/>
+                            <constraint firstItem="xRz-Fi-960" firstAttribute="leading" secondItem="0Hr-g6-icr" secondAttribute="leadingMargin" id="vdR-k5-c9u"/>
+                            <constraint firstItem="3ap-2p-v5U" firstAttribute="bottom" secondItem="ePg-aQ-Ach" secondAttribute="bottom" id="viK-Q4-E4A"/>
+                            <constraint firstItem="86u-cb-PkJ" firstAttribute="trailing" secondItem="XGM-lg-HhY" secondAttribute="trailing" id="xF9-hm-aUz"/>
+                            <constraint firstItem="djt-E0-uBG" firstAttribute="leading" secondItem="v2g-HM-gja" secondAttribute="trailing" constant="8" symbolic="YES" id="zih-Ja-HAk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ePg-aQ-Ach"/>
+                    </view>
+                    <connections>
+                        <segue destination="OEx-ZY-WlB" kind="show" identifier="toContactUs" id="2gT-gC-LYx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bdq-QU-2Yc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="-528"/>
+        </scene>
+        <!--Mini Karate View Controller-->
+        <scene sceneID="G0j-T0-UJx">
+            <objects>
+                <viewController id="Wz4-ah-ChN" customClass="MiniKarateViewController" customModule="Seiken" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="16q-Ud-4ZW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="bbA-CD-Iba">
+                                <rect key="frame" x="315" y="20" width="44" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="61C-Jp-RJS"/>
+                                    <constraint firstAttribute="width" constant="44" id="kJB-ti-AHc"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="iaq-c7-aSe">
+                                <rect key="frame" x="16" y="20" width="44" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="v2H-gI-zQ6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeikenLogo copy" translatesAutoresizingMaskIntoConstraints="NO" id="MfC-d5-jSl">
+                                <rect key="frame" x="144" y="20" width="88" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="pGK-3O-v6b"/>
+                                    <constraint firstAttribute="width" secondItem="MfC-d5-jSl" secondAttribute="height" multiplier="44:41" id="zAD-Jh-VbU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Seiken-Martial-Arts" translatesAutoresizingMaskIntoConstraints="NO" id="t3v-UC-YIf">
+                                <rect key="frame" x="68" y="110" width="239" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="39d-ME-WcC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mini Karate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VT-gN-7EG">
+                                <rect key="frame" x="16" y="159" width="343" height="25"/>
+                                <color key="backgroundColor" red="0.78514868019999995" green="0.1598700881" blue="0.1514880955" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="xlM-fD-v1V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MiniKarate" translatesAutoresizingMaskIntoConstraints="NO" id="dR5-Ph-Fde">
+                                <rect key="frame" x="0.0" y="203" width="375" height="224"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="H4V-iu-r8b">
+                                <rect key="frame" x="0.0" y="435" width="375" height="179"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="179" id="e3B-ig-zLE"/>
+                                </constraints>
+                                <string key="text">These classes are taught specifically for 4-7 year olds. This program mainly focuses on discipline, focus, flexibility, physical strength, basic techniques and sparring. Martia arts games, rolling on a crash mat, target training and lots of stretching are some of this program's curriculm. Consistent feedback and praise, based on real accomplishments, strengths te childs' self-confidence and reinforces positive behavior.</string>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcC-ZH-STd">
+                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <color key="backgroundColor" red="0.78514868021011353" green="0.15987008810043335" blue="0.15148809552192688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                <state key="normal" title="Contact us to book for two free trial classes">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="contactUsTapped:" destination="Wz4-ah-ChN" eventType="touchUpInside" id="Tpm-7B-D5M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MfC-d5-jSl" firstAttribute="centerX" secondItem="t3v-UC-YIf" secondAttribute="centerX" id="0eY-nI-KGT"/>
+                            <constraint firstItem="dR5-Ph-Fde" firstAttribute="top" secondItem="2VT-gN-7EG" secondAttribute="bottom" constant="19" id="1SG-nK-AgZ"/>
+                            <constraint firstItem="XcC-ZH-STd" firstAttribute="trailing" secondItem="H4V-iu-r8b" secondAttribute="trailing" id="7Gc-Lt-T7i"/>
+                            <constraint firstItem="t3v-UC-YIf" firstAttribute="centerX" secondItem="2VT-gN-7EG" secondAttribute="centerX" id="9SO-ma-KLg"/>
+                            <constraint firstItem="H4V-iu-r8b" firstAttribute="top" secondItem="dR5-Ph-Fde" secondAttribute="bottom" constant="8" symbolic="YES" id="DRd-23-WqU"/>
+                            <constraint firstAttribute="trailing" secondItem="dR5-Ph-Fde" secondAttribute="trailing" id="Dax-oB-Mxv"/>
+                            <constraint firstItem="2VT-gN-7EG" firstAttribute="top" secondItem="t3v-UC-YIf" secondAttribute="bottom" constant="8" symbolic="YES" id="EaP-0n-pMH"/>
+                            <constraint firstItem="t3v-UC-YIf" firstAttribute="leading" secondItem="iaq-c7-aSe" secondAttribute="trailing" constant="8" symbolic="YES" id="HI0-nk-hJX"/>
+                            <constraint firstItem="iaq-c7-aSe" firstAttribute="top" secondItem="MfC-d5-jSl" secondAttribute="top" id="MNQ-IX-taN"/>
+                            <constraint firstItem="dR5-Ph-Fde" firstAttribute="leading" secondItem="H4V-iu-r8b" secondAttribute="leading" id="MuE-i9-QvN"/>
+                            <constraint firstItem="XcC-ZH-STd" firstAttribute="top" secondItem="H4V-iu-r8b" secondAttribute="bottom" constant="8" symbolic="YES" id="Mur-zr-37I"/>
+                            <constraint firstItem="9kX-qJ-FAp" firstAttribute="bottom" secondItem="H4V-iu-r8b" secondAttribute="bottom" constant="53" id="OD7-UA-lj4"/>
+                            <constraint firstItem="2VT-gN-7EG" firstAttribute="top" secondItem="iaq-c7-aSe" secondAttribute="bottom" constant="34" id="RUk-lx-W4c"/>
+                            <constraint firstItem="dR5-Ph-Fde" firstAttribute="leading" secondItem="16q-Ud-4ZW" secondAttribute="leading" id="UeO-tq-eMf"/>
+                            <constraint firstItem="XcC-ZH-STd" firstAttribute="bottom" secondItem="9kX-qJ-FAp" secondAttribute="bottom" id="V6X-tN-fdT"/>
+                            <constraint firstItem="bbA-CD-Iba" firstAttribute="leading" secondItem="t3v-UC-YIf" secondAttribute="trailing" constant="8" symbolic="YES" id="VmS-5J-azf"/>
+                            <constraint firstItem="2VT-gN-7EG" firstAttribute="centerX" secondItem="dR5-Ph-Fde" secondAttribute="centerX" id="a2w-XA-t8Y"/>
+                            <constraint firstItem="iaq-c7-aSe" firstAttribute="leading" secondItem="2VT-gN-7EG" secondAttribute="leading" id="a86-tV-cdx"/>
+                            <constraint firstItem="iaq-c7-aSe" firstAttribute="leading" secondItem="16q-Ud-4ZW" secondAttribute="leadingMargin" id="cVK-Sf-bkR"/>
+                            <constraint firstItem="t3v-UC-YIf" firstAttribute="top" secondItem="MfC-d5-jSl" secondAttribute="bottom" constant="8" symbolic="YES" id="e2R-XM-wMW"/>
+                            <constraint firstItem="MfC-d5-jSl" firstAttribute="top" secondItem="bbA-CD-Iba" secondAttribute="top" id="g0L-XC-OwA"/>
+                            <constraint firstItem="bbA-CD-Iba" firstAttribute="trailing" secondItem="2VT-gN-7EG" secondAttribute="trailing" id="iyD-NQ-NLS"/>
+                            <constraint firstItem="iaq-c7-aSe" firstAttribute="top" secondItem="9kX-qJ-FAp" secondAttribute="top" id="lYK-2R-nU7"/>
+                            <constraint firstItem="iaq-c7-aSe" firstAttribute="bottom" secondItem="bbA-CD-Iba" secondAttribute="bottom" id="t3x-Ub-A32"/>
+                            <constraint firstItem="XcC-ZH-STd" firstAttribute="leading" secondItem="H4V-iu-r8b" secondAttribute="leading" id="wp3-t0-bLV"/>
+                            <constraint firstItem="dR5-Ph-Fde" firstAttribute="trailing" secondItem="H4V-iu-r8b" secondAttribute="trailing" id="yHJ-lc-rMC"/>
+                            <constraint firstItem="MfC-d5-jSl" firstAttribute="centerX" secondItem="9kX-qJ-FAp" secondAttribute="centerX" id="zAQ-G0-tfa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9kX-qJ-FAp"/>
+                    </view>
+                    <connections>
+                        <segue destination="OEx-ZY-WlB" kind="show" identifier="toContactUs" id="ObE-fc-Byh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L6z-Co-7au" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="-1301"/>
+        </scene>
+        <!--ContactUs-->
+        <scene sceneID="NQn-6B-hHJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ContactUs" id="OEx-ZY-WlB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hoM-48-9f8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904" y="-1285"/>
+        </scene>
+        <!--Kickboxing View Controller-->
+        <scene sceneID="TpW-zX-bgA">
+            <objects>
+                <viewController id="vDv-Dv-NNs" customClass="KickboxingViewController" customModule="Seiken" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CR8-pJ-aoS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="vQF-9v-ZLx">
+                                <rect key="frame" x="315" y="20" width="44" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="H8x-b5-t4x"/>
+                                    <constraint firstAttribute="height" constant="105" id="X9R-UN-8sm"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="FZ3-uO-hav">
+                                <rect key="frame" x="16" y="20" width="44" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="tEv-ny-1gy"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeikenLogo copy" translatesAutoresizingMaskIntoConstraints="NO" id="PXP-ef-YJM">
+                                <rect key="frame" x="144" y="20" width="88" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PXP-ef-YJM" secondAttribute="height" multiplier="44:41" id="CGK-zC-4aG"/>
+                                    <constraint firstAttribute="height" constant="82" id="o1j-Tk-IEI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Seiken-Martial-Arts" translatesAutoresizingMaskIntoConstraints="NO" id="4rZ-CJ-95c">
+                                <rect key="frame" x="68" y="110" width="239" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="gI8-QI-5ag"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kickboxing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uQ-yu-FoJ">
+                                <rect key="frame" x="16" y="159" width="343" height="25"/>
+                                <color key="backgroundColor" red="0.78514868019999995" green="0.1598700881" blue="0.1514880955" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="5Kr-1m-JxE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KickboxingPic" translatesAutoresizingMaskIntoConstraints="NO" id="3K8-p0-u0N">
+                                <rect key="frame" x="0.0" y="203" width="375" height="224"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sPQ-Pb-RZ3">
+                                <rect key="frame" x="0.0" y="435" width="375" height="179"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="179" id="56i-pO-Lep"/>
+                                </constraints>
+                                <string key="text">The Kickboxing program is designed to improve physical conditioning, overall fitness, as well as the cardio vascular system and flexibility. These classes include learning techniques, target training, bag training, partner training, cardio training, stretching and more.               Sparring class is available for those who are interested in fighting.</string>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GG7-sx-cak">
+                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <color key="backgroundColor" red="0.78514868021011353" green="0.15987008810043335" blue="0.15148809552192688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="YqB-8b-NJA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                <state key="normal" title="Contact us to book for two free trial classes">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="contactUsTapped:" destination="vDv-Dv-NNs" eventType="touchUpInside" id="chC-6z-olg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sPQ-Pb-RZ3" firstAttribute="leading" secondItem="GG7-sx-cak" secondAttribute="leading" id="0X7-DQ-1aG"/>
+                            <constraint firstItem="FZ3-uO-hav" firstAttribute="leading" secondItem="CR8-pJ-aoS" secondAttribute="leadingMargin" id="3Wc-sm-J9A"/>
+                            <constraint firstItem="FZ3-uO-hav" firstAttribute="top" secondItem="PXP-ef-YJM" secondAttribute="top" id="4rA-gh-8YR"/>
+                            <constraint firstItem="1uQ-yu-FoJ" firstAttribute="top" secondItem="FZ3-uO-hav" secondAttribute="bottom" constant="34" id="8vk-B1-rq8"/>
+                            <constraint firstItem="FZ3-uO-hav" firstAttribute="top" secondItem="bdm-ab-CqA" secondAttribute="top" id="9sb-Go-aTW"/>
+                            <constraint firstItem="FZ3-uO-hav" firstAttribute="bottom" secondItem="vQF-9v-ZLx" secondAttribute="bottom" id="CqB-MO-qBe"/>
+                            <constraint firstItem="PXP-ef-YJM" firstAttribute="top" secondItem="vQF-9v-ZLx" secondAttribute="top" id="GuO-Gl-zOW"/>
+                            <constraint firstItem="PXP-ef-YJM" firstAttribute="centerX" secondItem="bdm-ab-CqA" secondAttribute="centerX" id="J7c-LJ-3bL"/>
+                            <constraint firstItem="vQF-9v-ZLx" firstAttribute="leading" secondItem="4rZ-CJ-95c" secondAttribute="trailing" constant="8" symbolic="YES" id="Jzz-wf-s5F"/>
+                            <constraint firstItem="4rZ-CJ-95c" firstAttribute="top" secondItem="PXP-ef-YJM" secondAttribute="bottom" constant="8" symbolic="YES" id="K4p-mu-748"/>
+                            <constraint firstItem="vQF-9v-ZLx" firstAttribute="trailing" secondItem="1uQ-yu-FoJ" secondAttribute="trailing" id="T9O-Nc-ADE"/>
+                            <constraint firstItem="sPQ-Pb-RZ3" firstAttribute="trailing" secondItem="GG7-sx-cak" secondAttribute="trailing" id="ZSU-mu-bni"/>
+                            <constraint firstItem="FZ3-uO-hav" firstAttribute="leading" secondItem="1uQ-yu-FoJ" secondAttribute="leading" id="cCj-xe-uRR"/>
+                            <constraint firstItem="GG7-sx-cak" firstAttribute="top" secondItem="sPQ-Pb-RZ3" secondAttribute="bottom" constant="8" symbolic="YES" id="dbm-4w-MCk"/>
+                            <constraint firstItem="GG7-sx-cak" firstAttribute="bottom" secondItem="bdm-ab-CqA" secondAttribute="bottom" id="dhB-ZG-2Sf"/>
+                            <constraint firstItem="sPQ-Pb-RZ3" firstAttribute="top" secondItem="3K8-p0-u0N" secondAttribute="bottom" constant="8" symbolic="YES" id="epX-7w-dLV"/>
+                            <constraint firstItem="4rZ-CJ-95c" firstAttribute="centerX" secondItem="1uQ-yu-FoJ" secondAttribute="centerX" id="jz4-ff-tcY"/>
+                            <constraint firstItem="PXP-ef-YJM" firstAttribute="centerX" secondItem="4rZ-CJ-95c" secondAttribute="centerX" id="lCp-Mm-T8G"/>
+                            <constraint firstItem="3K8-p0-u0N" firstAttribute="trailing" secondItem="sPQ-Pb-RZ3" secondAttribute="trailing" id="lfC-Yk-CX2"/>
+                            <constraint firstItem="3K8-p0-u0N" firstAttribute="top" secondItem="1uQ-yu-FoJ" secondAttribute="bottom" constant="19" id="p4O-sY-YPt"/>
+                            <constraint firstItem="3K8-p0-u0N" firstAttribute="leading" secondItem="CR8-pJ-aoS" secondAttribute="leading" id="q3l-5h-cXl"/>
+                            <constraint firstItem="1uQ-yu-FoJ" firstAttribute="top" secondItem="4rZ-CJ-95c" secondAttribute="bottom" constant="8" symbolic="YES" id="tNO-3g-BBq"/>
+                            <constraint firstItem="3K8-p0-u0N" firstAttribute="leading" secondItem="sPQ-Pb-RZ3" secondAttribute="leading" id="tVY-MU-V9G"/>
+                            <constraint firstItem="3K8-p0-u0N" firstAttribute="centerX" secondItem="1uQ-yu-FoJ" secondAttribute="centerX" id="wbK-RI-Tm8"/>
+                            <constraint firstItem="4rZ-CJ-95c" firstAttribute="leading" secondItem="FZ3-uO-hav" secondAttribute="trailing" constant="8" symbolic="YES" id="yRd-JR-UeU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bdm-ab-CqA"/>
+                    </view>
+                    <connections>
+                        <segue destination="OEx-ZY-WlB" kind="show" identifier="toContactUs" id="Ljn-dN-cv2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYx-53-nwO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="-2045"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Beach" width="4721" height="690"/>
+        <image name="KickboxingPic" width="2592" height="1936"/>
+        <image name="Logo Type __" width="318" height="749"/>
+        <image name="MiniKarate" width="3504" height="2336"/>
+        <image name="Seiken-Martial-Arts" width="553" height="91"/>
+        <image name="SeikenLogo copy" width="375" height="375"/>
+        <image name="shinkyo2" width="3504" height="2336"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="2gT-gC-LYx"/>
+    </inferredMetricsTieBreakers>
+</document>

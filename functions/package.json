@@ -1,0 +1,30 @@
+{
+  "name": "seiken_martial_arts_app",
+  "version": "1.0.0",
+  "description": "send an email to Sensei after a new user has been created",
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "~5.2.1",
+    "firebase-functions": "^0.6.2",
+    "nodemailer": "^4.0.1"
+  },
+  "private": true,
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  },
+  "author": "Shahin Zangenehpour",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/username/repository/issues"
+  },
+  "homepage": "https://github.com/username/repository#readme",
+  "keywords": [
+    "martial",
+    "arts"
+  ]
+}

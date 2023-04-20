@@ -1,0 +1,6 @@
+framework module Pods_Seiken {
+  umbrella header "Pods-Seiken-umbrella.h"
+
+  export *
+  module * { export * }
+}

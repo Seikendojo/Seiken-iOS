@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oUY-In-ch0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChalkboardSE.ttc">
+            <string>ChalkboardSE-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Student Of The MonthVC-->
+        <scene sceneID="VEE-Hi-NXB">
+            <objects>
+                <viewController id="oUY-In-ch0" customClass="StudentOfTheMonthVC" customModule="Seiken" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XMF-Ah-Fp3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="Eq9-IN-mV0">
+                                <rect key="frame" x="315" y="20" width="44" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="06S-4J-EyL"/>
+                                    <constraint firstAttribute="height" constant="105" id="bUY-nB-2As"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="W2g-wP-443">
+                                <rect key="frame" x="16" y="20" width="45" height="105"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeikenLogo copy" translatesAutoresizingMaskIntoConstraints="NO" id="NNv-cD-4pm">
+                                <rect key="frame" x="144" y="20" width="88" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NNv-cD-4pm" secondAttribute="height" multiplier="44:41" id="1lu-DU-Ajz"/>
+                                    <constraint firstAttribute="height" constant="82" id="JxV-YS-LAB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Seiken-Martial-Arts" translatesAutoresizingMaskIntoConstraints="NO" id="Rqi-fj-1HC">
+                                <rect key="frame" x="68" y="110" width="239" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="6PA-gv-XLm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student of the month" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Um6-iW-IuS">
+                                <rect key="frame" x="16" y="170" width="343" height="26"/>
+                                <color key="backgroundColor" red="0.78514868019999995" green="0.1598700881" blue="0.1514880955" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="NHT-Vo-q4K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rU5-0F-BHn">
+                                <rect key="frame" x="16" y="220" width="343" height="299"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">A human life gains luster and strength only when it is pulished and temper."Mas Oyama"                                      The student of the month at Seiken Martial Arts has been chosen based on their hardwork and self improvment through Shinkykushin karate training. They will be recognized for their efforts, behaviour and descipline as well as their techniques and martial arts skills.They will be awarded by having their photo here for the entire month.</string>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyB-8C-sSj">
+                                <rect key="frame" x="93" y="550" width="189" height="26"/>
+                                <color key="backgroundColor" red="0.78514868019999995" green="0.1598700881" blue="0.1514880955" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="8YU-au-jO2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                <state key="normal" title="Who is it?">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="whoIsItAction:" destination="oUY-In-ch0" eventType="touchUpInside" id="VjX-ra-JVN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rU5-0F-BHn" firstAttribute="top" secondItem="Um6-iW-IuS" secondAttribute="bottom" constant="24" id="0bH-pD-oqX"/>
+                            <constraint firstItem="Um6-iW-IuS" firstAttribute="top" secondItem="Rqi-fj-1HC" secondAttribute="bottom" constant="19" id="19i-tz-e3Z"/>
+                            <constraint firstItem="W2g-wP-443" firstAttribute="leading" secondItem="rU5-0F-BHn" secondAttribute="leading" id="1No-tc-xvO"/>
+                            <constraint firstItem="NNv-cD-4pm" firstAttribute="centerX" secondItem="Rqi-fj-1HC" secondAttribute="centerX" id="1kK-5a-Hpk"/>
+                            <constraint firstItem="zyB-8C-sSj" firstAttribute="top" secondItem="rU5-0F-BHn" secondAttribute="bottom" constant="31" id="4oJ-ej-wWi"/>
+                            <constraint firstItem="Um6-iW-IuS" firstAttribute="centerX" secondItem="rU5-0F-BHn" secondAttribute="centerX" id="6jQ-o5-L9x"/>
+                            <constraint firstItem="NNv-cD-4pm" firstAttribute="centerX" secondItem="55i-Pn-5O1" secondAttribute="centerX" id="6kR-6R-Msu"/>
+                            <constraint firstItem="Eq9-IN-mV0" firstAttribute="leading" secondItem="Rqi-fj-1HC" secondAttribute="trailing" constant="8" symbolic="YES" id="Hwg-HW-8Ds"/>
+                            <constraint firstItem="Um6-iW-IuS" firstAttribute="leading" secondItem="55i-Pn-5O1" secondAttribute="leading" constant="16" id="IBJ-xz-aC9"/>
+                            <constraint firstItem="Um6-iW-IuS" firstAttribute="leading" secondItem="zyB-8C-sSj" secondAttribute="leading" constant="-77" id="JwP-xU-7Fu"/>
+                            <constraint firstItem="Eq9-IN-mV0" firstAttribute="trailing" secondItem="rU5-0F-BHn" secondAttribute="trailing" id="KyT-cz-m1p"/>
+                            <constraint firstItem="Rqi-fj-1HC" firstAttribute="top" secondItem="NNv-cD-4pm" secondAttribute="bottom" constant="8" symbolic="YES" id="MeK-9X-Ewn"/>
+                            <constraint firstItem="W2g-wP-443" firstAttribute="bottom" secondItem="Eq9-IN-mV0" secondAttribute="bottom" id="NGP-wk-EHF"/>
+                            <constraint firstItem="Um6-iW-IuS" firstAttribute="trailing" secondItem="zyB-8C-sSj" secondAttribute="trailing" constant="77" id="OUc-kh-qTq"/>
+                            <constraint firstItem="Rqi-fj-1HC" firstAttribute="centerX" secondItem="Um6-iW-IuS" secondAttribute="centerX" id="Ypv-vL-SBS"/>
+                            <constraint firstItem="Rqi-fj-1HC" firstAttribute="leading" secondItem="W2g-wP-443" secondAttribute="trailing" constant="7" id="gGv-0K-aed"/>
+                            <constraint firstItem="NNv-cD-4pm" firstAttribute="top" secondItem="Eq9-IN-mV0" secondAttribute="top" id="grF-ac-Ckj"/>
+                            <constraint firstItem="rU5-0F-BHn" firstAttribute="top" secondItem="W2g-wP-443" secondAttribute="bottom" constant="95" id="jYd-51-dY2"/>
+                            <constraint firstItem="Eq9-IN-mV0" firstAttribute="trailing" secondItem="XMF-Ah-Fp3" secondAttribute="trailingMargin" id="lsh-Pl-E9J"/>
+                            <constraint firstItem="W2g-wP-443" firstAttribute="top" secondItem="NNv-cD-4pm" secondAttribute="top" id="qR2-ir-7sG"/>
+                            <constraint firstItem="W2g-wP-443" firstAttribute="top" secondItem="55i-Pn-5O1" secondAttribute="top" id="uUr-MJ-Psz"/>
+                            <constraint firstItem="W2g-wP-443" firstAttribute="leading" secondItem="XMF-Ah-Fp3" secondAttribute="leadingMargin" id="uxU-OD-zGp"/>
+                            <constraint firstItem="55i-Pn-5O1" firstAttribute="bottom" secondItem="zyB-8C-sSj" secondAttribute="bottom" constant="91" id="vDM-eF-dde"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="55i-Pn-5O1"/>
+                    </view>
+                    <connections>
+                        <segue destination="rjR-kj-3DQ" kind="show" identifier="SecondStudentView" id="rkV-zk-xag"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y7N-v6-wW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168.80000000000001" y="187.55622188905548"/>
+        </scene>
+        <!--Second Student Ofthe MonthVC-->
+        <scene sceneID="tfV-SK-Dht">
+            <objects>
+                <viewController id="rjR-kj-3DQ" customClass="SecondStudentOftheMonthVC" customModule="Seiken" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ueu-Ia-Hhx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="pga-hL-BFL">
+                                <rect key="frame" x="315" y="20" width="44" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="fsT-eZ-EPJ"/>
+                                    <constraint firstAttribute="width" constant="44" id="ovZ-Em-WDa"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Type __" translatesAutoresizingMaskIntoConstraints="NO" id="ueA-Da-1De">
+                                <rect key="frame" x="16" y="20" width="45" height="105"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeikenLogo copy" translatesAutoresizingMaskIntoConstraints="NO" id="fTR-ZX-Np6">
+                                <rect key="frame" x="144" y="20" width="88" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="Q1B-g1-S15"/>
+                                    <constraint firstAttribute="width" secondItem="fTR-ZX-Np6" secondAttribute="height" multiplier="44:41" id="n9q-Uw-b5X"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Seiken-Martial-Arts" translatesAutoresizingMaskIntoConstraints="NO" id="cgD-Fr-0wf">
+                                <rect key="frame" x="68" y="110" width="239" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="2DP-BZ-7MH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student of the month name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Nj-hq-SVj">
+                                <rect key="frame" x="16" y="164" width="343" height="20"/>
+                                <color key="backgroundColor" red="0.78514868019999995" green="0.1598700881" blue="0.1514880955" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="10" translatesAutoresizingMaskIntoConstraints="NO" id="TdK-dc-t1m">
+                                <rect key="frame" x="0.0" y="203" width="375" height="464"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ComingSoon 2" translatesAutoresizingMaskIntoConstraints="NO" id="cmh-TG-Cs9">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="464"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="cmh-TG-Cs9" secondAttribute="bottom" id="Adg-Lb-5zn"/>
+                                    <constraint firstItem="cmh-TG-Cs9" firstAttribute="leading" secondItem="TdK-dc-t1m" secondAttribute="leading" id="MZe-A7-Uer"/>
+                                    <constraint firstItem="cmh-TG-Cs9" firstAttribute="centerX" secondItem="TdK-dc-t1m" secondAttribute="centerX" id="Qew-p5-6Ou"/>
+                                    <constraint firstItem="cmh-TG-Cs9" firstAttribute="top" secondItem="TdK-dc-t1m" secondAttribute="top" id="fcz-SN-PFR"/>
+                                    <constraint firstAttribute="trailing" secondItem="cmh-TG-Cs9" secondAttribute="trailing" id="pxW-as-Qvg"/>
+                                    <constraint firstItem="cmh-TG-Cs9" firstAttribute="centerY" secondItem="TdK-dc-t1m" secondAttribute="centerY" id="v9r-4v-gYW"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="rjR-kj-3DQ" id="2Fp-5x-pLj"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ueA-Da-1De" firstAttribute="top" secondItem="fTR-ZX-Np6" secondAttribute="top" id="2er-vr-IWB"/>
+                            <constraint firstItem="TdK-dc-t1m" firstAttribute="top" secondItem="ueu-Ia-Hhx" secondAttribute="top" constant="203" id="4d8-pz-Ob9"/>
+                            <constraint firstItem="fTR-ZX-Np6" firstAttribute="centerX" secondItem="cgD-Fr-0wf" secondAttribute="centerX" id="9Gy-a3-fmz"/>
+                            <constraint firstItem="TdK-dc-t1m" firstAttribute="bottom" secondItem="ZHY-sG-n6m" secondAttribute="bottom" id="9NR-ph-GvY"/>
+                            <constraint firstItem="fTR-ZX-Np6" firstAttribute="centerX" secondItem="ZHY-sG-n6m" secondAttribute="centerX" id="D91-WT-vVI"/>
+                            <constraint firstItem="ueA-Da-1De" firstAttribute="leading" secondItem="ueu-Ia-Hhx" secondAttribute="leadingMargin" id="Kq7-Q2-6Yc"/>
+                            <constraint firstItem="ueA-Da-1De" firstAttribute="top" secondItem="ZHY-sG-n6m" secondAttribute="top" id="Pgl-bW-Qq9"/>
+                            <constraint firstItem="ueA-Da-1De" firstAttribute="bottom" secondItem="pga-hL-BFL" secondAttribute="bottom" id="Qz9-l1-Umo"/>
+                            <constraint firstItem="1Nj-hq-SVj" firstAttribute="trailing" secondItem="pga-hL-BFL" secondAttribute="trailing" id="ZJA-OH-a4R"/>
+                            <constraint firstItem="1Nj-hq-SVj" firstAttribute="leading" secondItem="ueA-Da-1De" secondAttribute="leading" id="Znm-xv-UoN"/>
+                            <constraint firstItem="1Nj-hq-SVj" firstAttribute="top" secondItem="cgD-Fr-0wf" secondAttribute="bottom" constant="13" id="aH4-vk-0Hk"/>
+                            <constraint firstItem="pga-hL-BFL" firstAttribute="trailing" secondItem="ueu-Ia-Hhx" secondAttribute="trailingMargin" id="bFb-Rt-NUu"/>
+                            <constraint firstItem="cgD-Fr-0wf" firstAttribute="top" secondItem="fTR-ZX-Np6" secondAttribute="bottom" constant="8" symbolic="YES" id="dSE-Cf-NSa"/>
+                            <constraint firstItem="cgD-Fr-0wf" firstAttribute="leading" secondItem="ueA-Da-1De" secondAttribute="trailing" constant="7" id="hgl-XU-C3b"/>
+                            <constraint firstItem="fTR-ZX-Np6" firstAttribute="top" secondItem="pga-hL-BFL" secondAttribute="top" id="ljk-jh-ax6"/>
+                            <constraint firstItem="pga-hL-BFL" firstAttribute="leading" secondItem="cgD-Fr-0wf" secondAttribute="trailing" constant="8" symbolic="YES" id="pHx-Nt-fzg"/>
+                            <constraint firstItem="TdK-dc-t1m" firstAttribute="leading" secondItem="ueu-Ia-Hhx" secondAttribute="leading" id="wh4-dC-aZy"/>
+                            <constraint firstItem="TdK-dc-t1m" firstAttribute="centerX" secondItem="1Nj-hq-SVj" secondAttribute="centerX" id="zGs-WT-bwT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZHY-sG-n6m"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="cmh-TG-Cs9" id="RZM-Ec-IMR"/>
+                        <outlet property="nameLabel" destination="1Nj-hq-SVj" id="6TA-Nx-PHI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FSS-HS-fgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981.60000000000002" y="187.55622188905548"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ComingSoon 2" width="612" height="792"/>
+        <image name="Logo Type __" width="318" height="749"/>
+        <image name="Seiken-Martial-Arts" width="553" height="91"/>
+        <image name="SeikenLogo copy" width="375" height="375"/>
+    </resources>
+</document>
